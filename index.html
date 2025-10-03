@@ -15,12 +15,12 @@ body{margin:0;padding:0;font-family:"Cursive",sans-serif;background:linear-gradi
 .letter::before{left:12px;}
 .letter::after{right:12px;}
 .memories{display:flex;flex-direction:column;gap:20px;align-items:center;}
-..memories img{
-  width:8px;       /* 8 pixels width */
-  height:8px;      /* 8 pixels height */
-  border-radius:1px; /* optional small corner */
-  box-shadow:none;  /* remove shadow for tiny size */
-  margin:2px auto;  /* center with tiny spacing */
+.memories img{
+  width:80px;      /* small width for phone display */
+  height:100px;    /* keeps proportion 8×10 ratio */
+  border-radius:5px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.2);
+  margin:5px auto;
   display:block;
 }
 .memories img:nth-child(odd){transform:translateX(-20px);}
