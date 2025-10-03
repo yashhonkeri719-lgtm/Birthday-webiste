@@ -15,13 +15,12 @@ body{margin:0;padding:0;font-family:"Cursive",sans-serif;background:linear-gradi
 .letter::before{left:12px;}
 .letter::after{right:12px;}
 .memories{display:flex;flex-direction:column;gap:20px;align-items:center;}
-..memories img{
-  width:90%;       /* photo takes almost full width on phone */
-  max-width:200px; /* limits photo size */
-  height:auto;     /* keeps aspect ratio */
-  border-radius:15px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.3);
-  margin:10px auto; /* centers the photo */
+.memories img{
+  width:100px;       /* fixed small width */
+  height:130px;      /* fixed small height (like passport) */
+  border-radius:8px; /* small rounded corners */
+  box-shadow:0 2px 5px rgba(0,0,0,0.3);
+  margin:10px auto;  /* center each photo */
   display:block;
 }
 .memories img:nth-child(odd){transform:translateX(-20px);}
